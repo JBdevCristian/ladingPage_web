@@ -122,7 +122,7 @@
 /*Processo de trabalho*/
 .trab {
     margin-top: 100px;
-    height: 100vh;
+    margin-bottom: 100px;
 }
 
 .title {
@@ -170,4 +170,79 @@
     border-radius: 100%;
     background-color: #537DDF;
     margin-right: 15px;
+}
+
+/* Seção Portfólio */
+.port .direita {
+    background-color: #900AF6; 
+    color: white; 
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.direita .content {
+    width: 500px;
+}
+
+.port .caixa {
+    height: 450px;
+    margin-bottom: 100px;
+    display: flex;
+    width: auto;
+    position: relative;
+}
+
+/*Seção De valores*/
+.pricing-section {
+  padding: 3rem 1rem;
+}
+.pricing-card {
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  padding: 1.5rem;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+.pricing-card:hover {
+  transform: translateY(-10px);
+}
+.pricing-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.pricing-price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+}
+.pricing-description {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+.pricing-btn {
+  margin-top: 1rem;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+}
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+.checklist li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+.checklist li::before {
+  content: "✔";
+  color: #9b59b6;
+  font-weight: bold;
+  margin-right: 0.5rem;
 }
