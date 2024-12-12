@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", serif;
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+/* Cabecalho*/
+.cabecalho {
+    height: 60vh;
+    position: relative;
+}
+
+.caixa1 { 
+    background-color: black; 
+    color: white; 
+    z-index: 0;
+}
+
+.caixa1 p {
+    width: 300px;
+    margin-left: 25%;
+    margin-top: 20px;
+}
+
+.caixa2 {
+    background-color: #900AF6; 
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%); 
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    width: 60%; 
+    height: 100%; 
+    z-index: 1;
+}
+
+.caixa2 .conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 100%;
+}
+
+/*Texto apresentação*/
+.apresentacao {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.apresentacao p {
+    margin-top: 20px;
+    width: 800px;
+}
+
+/*Seção de Qualidades*/
+.qualit {
+    background-color: #900AF6;
+}
+
+.caixa {
+    height: 300px;
+    margin-bottom: 100px;
+    display: flex;
+    width: auto;
+    position: relative;
+}
+
+.caixa-final {
+    height: 300px;
+    display: flex;
+    width: auto;
+    position: relative;
+}
+
+.esquerda {
+    clip-path: polygon(0% 0%, 65% 0, 90% 100%, 86% 100%, 0% 100%);
+    width: 900px;
+    background-color: white;
+    position: absolute; 
+    height: 100%; 
+    z-index: 1;
+}
+
+.direita {
+    background-color: black; 
+    color: white; 
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+ .lado1 {
+    background-color: black; 
+    color: white; 
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.lado1 .content {
+    margin-left: 40px;
+}
+
+ .lado2 {
+    background-color: #ffffff; 
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%); 
+    position: absolute; 
+    width: 900px;
+    margin-left: 40%;
+    height: 100%;
+    z-index: 1;
+}
+
+/*Processo de trabalho*/
+.trab {
+    margin-top: 100px;
+    height: 100vh;
+}
+
+.title {
+    margin-bottom: 100px;
+}
+
+.col .imagem {
+    border: 1px solid #ccc;
+    height: 250px;
+    border-radius: 30px;
+}
+
+.title-card {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.bola1 {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: #ccc;
+    margin-right: 15px;
+}
+
+.bola2 {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: #00DFC3;
+    margin-right: 15px;
+}
+
+.bola3 {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: #FF8E01;
+    margin-right: 15px;
+}
+
+.bola4 {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: #537DDF;
+    margin-right: 15px;
+}
