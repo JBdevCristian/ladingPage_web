@@ -37,7 +37,7 @@
             align-items: center;
             position: relative;
             overflow: hidden; /* Garante que o conteúdo não ultrapasse a área */
-            z-index: 1; /* Garante que a esquerda fique acima dos outros elementos */
+            z-index: 1; /* Garante que a esquerda fique abaixo da imagem */
         }
         
         /* Pseudo-elemento para aplicar o clip-path */
@@ -52,24 +52,26 @@
             clip-path: polygon(0 0, 100% 0, 51% 100%, 0% 100%); /* Invertendo o efeito para a esquerda */
             z-index: 2; /* O pseudo-elemento ficará acima de todos os outros */
         }
-        
-        
 
-
+        /* Ajuste no texto */
+        .lado1 h1 {
+            position: relative; /* Garante que o texto fique acima do pseudo-elemento */
+            z-index: 3; /* Torna o texto visível acima do pseudo-elemento */
+            color: white; /* Adiciona uma cor ao texto para ficar visível */
+        }
+        
     </style>
 </head>
 <body>
 
-
-        <div class="fundo">
-            <div class="lado1">
-
-            </div>
-            <div class="lado2">
-                    <img src="reponsiv.png" alt="">
-            </div>
+    <div class="fundo">
+        <div class="lado1">
+            <h1>Teste</h1>
         </div>
-
+        <div class="lado2">
+            <img src="reponsiv.png" alt="">
+        </div>
+    </div>
 
 </body>
 </html>
