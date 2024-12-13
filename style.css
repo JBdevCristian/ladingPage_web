@@ -4,16 +4,23 @@ body {
     -webkit-font-smoothing: antialiased; 
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
+    background-color: #f0f0f0; 
 }
 
-body{
-    background-color: #f0f0f0;
+body p{
+    font-size: 18px;
+    font-weight: 300;
 }
 
 /* Cabecalho*/
 .cabecalho {
     height: 60vh;
     position: relative;
+}
+
+.cabecalho .conteudo img {
+    width: 800px;
+    margin-left: 100px;
 }
 
 .caixa1 { 
@@ -26,6 +33,7 @@ body{
     width: 300px;
     margin-left: 25%;
     margin-top: 20px;
+   
 }
 
 .caixa2 {
@@ -64,6 +72,7 @@ body{
 /*Informações*/
 .info {
     color: white;
+    background-color: #900AF6;
 }
 
 .fundo {
@@ -72,6 +81,8 @@ body{
     height: 350px;
     width: 100%;
     position: relative;
+    margin-bottom: 100px;
+    box-shadow: 2px 15px 19px -18px rgba(0,0,0,0.75);
 }
 
 .lado2 {
@@ -118,6 +129,61 @@ body{
 .lado1 .content {
     position: absolute; /* Positiona o conteúdo de forma absoluta dentro de .lado1 */
     left: 30px; /* Alinha o conteúdo à esquerda */
+    z-index: 4; /* Garante que o conteúdo fique acima do pseudo-elemento */
+    color: white; /* Cor do texto */
+}
+
+.l-esquerdo {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 3; /* Adiciona o z-index para controlar a sobreposição */
+}
+
+.l-esquerdo img {
+    width: 700px;
+    position: absolute; /* Positiona o conteúdo de forma absoluta dentro de .lado1 */
+    left: 150px; /* Alinha o conteúdo à esquerda */
+    transform: translate(-20%, -15%);
+}
+
+.l-direito {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse a área */
+    z-index: 1; /* Garante que a esquerda fique abaixo da imagem */
+}
+
+/* Pseudo-elemento para aplicar o clip-path */
+.l-direito::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* Cor de fundo da esquerda */
+    clip-path: polygon(49% 0, 100% 0, 100% 100%, 0% 100%);
+    z-index: 2; /* O pseudo-elemento ficará acima de todos os outros */
+}
+
+/* Ajuste no texto */
+.l-direito h1 {
+    position: relative; /* Garante que o texto fique acima do pseudo-elemento */
+    z-index: 3; /* Torna o texto visível acima do pseudo-elemento */
+    color: white; /* Adiciona uma cor ao texto para ficar visível */
+}
+
+.l-direito .content {
+    position: absolute; /* Positiona o conteúdo de forma absoluta dentro de .lado1 */
+    right: 30px; /* Alinha o conteúdo à esquerda */
     z-index: 4; /* Garante que o conteúdo fique acima do pseudo-elemento */
     color: white; /* Cor do texto */
 }
@@ -189,6 +255,10 @@ body{
 }
 
 /* Seção Portfólio */
+.port {
+    box-shadow: 2px 15px 19px -18px rgba(0,0,0,0.75);
+}
+
 .port .direita {
     background-color: #900AF6; 
     color: white; 
@@ -234,6 +304,7 @@ body{
 .pricing-section {
   padding: 3rem 1rem;
   margin-bottom: 100px;
+  
 }
 .pricing-section .val {
     display: flex;
@@ -251,6 +322,7 @@ body{
     padding: 30px;
     background-color: white;
     border-radius: 20px;
+    box-shadow: 2px 15px 19px -18px rgba(0,0,0,0.75);
 }
 
 .pricing-card {
