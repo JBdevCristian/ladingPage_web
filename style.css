@@ -7,6 +7,10 @@
     overflow-x: hidden;
 }
 
+body{
+    background-color: #f0f0f0;
+}
+
 /* Cabecalho*/
 .cabecalho {
     height: 60vh;
@@ -129,7 +133,7 @@
     margin-bottom: 100px;
 }
 
-.col .imagem {
+.trab .imagem {
     border: 1px solid #ccc;
     height: 250px;
     border-radius: 30px;
@@ -198,18 +202,51 @@
 /*Seção De valores*/
 .pricing-section {
   padding: 3rem 1rem;
+  margin-bottom: 100px;
 }
+.pricing-section .val {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.pricing-section .val h5 {
+    width: 120px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+}
+
+.valor-card {
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+}
+
 .pricing-card {
   border: 1px solid #eaeaea;
   border-radius: 12px;
   padding: 1.5rem;
-  background: #fff;
+  background: #ededed;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s;
 }
+
+.pricing-card1 {
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 1.5rem;
+    background: #ededed;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+    padding-bottom: 21%;
+  }
 .pricing-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-6px);
 }
+
+.pricing-card1:hover {
+    transform: translateY(-6px);
+  }
 .pricing-title {
   font-size: 1.25rem;
   font-weight: bold;
@@ -246,3 +283,41 @@
   font-weight: bold;
   margin-right: 0.5rem;
 }
+
+/*footer*/
+footer {
+    background-color: #900AF6;
+    height: 60vh;
+    color: white;
+    display: flex; /* Garante alinhamento no centro do footer */
+    justify-content: center;
+    align-items: center;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column; /* Organiza itens verticalmente */
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centraliza o texto */
+}
+
+footer .container button {
+    border-radius: 20px;
+    padding: 10px 25px;
+    border: 2px solid white;
+    margin-top: 20px; /* Adiciona espaçamento entre o botão e outros itens */
+}
+
+footer p {
+    font-style: italic; /* Define o texto como itálico */
+    font-weight: 300; /* Define o peso da fonte como leve (light) */
+}
+
+footer h1 {
+    width: 100%; /* Ajusta largura para usar espaço disponível */
+    max-width: 500px; /* Garante um limite de largura */
+    text-align: center; /* Centraliza o texto */
+}
+
+
