@@ -270,6 +270,11 @@ body p{
     justify-content: end;
 }
 
+ .direita .content img {
+    width: 25px;
+    margin-left: 5px;
+}
+
 .port .esquerda {
     clip-path: polygon(0% 0%, 65% 0, 90% 100%, 86% 100%, 0% 100%);
     width: 900px;
@@ -279,14 +284,15 @@ body p{
     z-index: 1;
 }
 
-.port img {
+.port .esquerda img {
     width: 110%;
     box-shadow: inset -12px 0px 15px -5px #FFFFFF;
     transition: 0.5s;
 }
 
-.port img:hover {
+.port .esquerda img:hover {
     width: 105%;
+    cursor: pointer;
 }
 
 .direita .content {
@@ -497,4 +503,15 @@ footer h1 {
     height: auto; /* Mantém a proporção */
 }
 
+/*Portfolio Celular*/
+.port-cell {
+    background-color: #900AF6;
+    color: white;
+    padding: 50px;
+}
+
+.port-cell img {
+    width: 35px;
+    margin-right: 10px;
+}
 
