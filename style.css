@@ -62,11 +62,12 @@ body p{
     align-items: center;
     text-align: center;
     margin-bottom: 100px;
+    margin-top: 100px;
 }
 
 .apresentacao p {
     margin-top: 20px;
-    width: 800px;
+    width: 100%;
 }
 
 /*Informações*/
@@ -421,6 +422,79 @@ footer h1 {
     width: 100%; /* Ajusta largura para usar espaço disponível */
     max-width: 500px; /* Garante um limite de largura */
     text-align: center; /* Centraliza o texto */
+}
+
+
+/*Celular*/
+.card-cell {
+    color: white;
+    background-color: #900AF6;
+    position: relative; /* Define o contêiner como referência para posicionamento */
+    overflow: hidden; /* Opcional, esconde partes que ultrapassarem os limites */
+}
+
+.card-cell p {
+    font-size: 15px;
+}
+
+.card-cell .conteudo {
+    height: 300px;
+}
+
+.card-cell .conteudo1 {
+    padding: 50px;
+}
+
+.card-cell img {
+    position: absolute; /* Permite posicionar a imagem dentro do contêiner */
+    bottom: 0; /* Alinha a parte inferior da imagem ao fundo do contêiner */
+    left: 0; /* Garante que a imagem fique alinhada à esquerda */
+    width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/*Informações cell*/
+.info-cell {
+    text-align: center; /* Centraliza elementos inline ou inline-block */
+    border: 1px  solid rgb(228, 228, 228);
+    background-color: white;
+    border-radius: 20px;
+    padding-top: 30px;
+    margin: 15px;
+    box-shadow: 2px 15px 19px -18px rgba(0,0,0,0.75);
+}
+
+.info-cell img {
+    width: 300px;
+    display: inline-block; /* Garante que a imagem respeite o alinhamento */
+    height: auto; /* Mantém a proporção */
+}
+
+.info-cell p {
+    padding: 20px;
+}
+
+
+
+.info-cell1 {
+    text-align: center; /* Centraliza elementos inline ou inline-block */
+    border: 1px  solid rgb(228, 228, 228);
+    background-color: #900AF6;
+    color: white;
+    border-radius: 20px;
+    padding-top: 30px;
+    margin: 15px;
+    box-shadow: 2px 15px 19px -18px rgba(0,0,0,0.75);
+}
+
+.info-cell1 p {
+    padding: 20px;
+}
+
+.info-cell1 img {
+    width: 400px;
+    display: inline-block; /* Garante que a imagem respeite o alinhamento */
+    height: auto; /* Mantém a proporção */
 }
 
 
