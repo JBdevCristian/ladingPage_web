@@ -339,13 +339,14 @@
                         <input type="text" required name="name" class="form-control" id="recipient-name" placeholder="Digite seu nome">
                     </div>
                     <div class="mb-3">
-                        <label for="recipient-name" class="col-form-label">Número para contato:</label>
-                        <input type="text" class="form-control" id="recipient-name" placeholder="(XX) XXXX-XXXX">
+                        <label for="recipient-name"  class="col-form-label">Número para contato:</label>
+                        <input type="text" class="form-control" name="cell" id="recipient-name" placeholder="(XX) XXXX-XXXX">
                     </div>
                     <div class="mb-3">
                       <label for="message-text" class="col-form-label">Message:</label>
                       <textarea required class="form-control" name="message" id="message-text" placeholder="Descreva o projeto que deseja fazer"></textarea>
                     </div>
+                    <input type="hidden" name="_captcha" value="false">
                     <button type="submit" class="btn btn-primary">Send message</button>
                   </form>
                 </div>
@@ -370,9 +371,25 @@
         ScrollReveal().reveal('.conteudo', {duration: 800, scale: 2});
         ScrollReveal().reveal('.conteudo1', {duration: 800, scale: 2});
         ScrollReveal().reveal('.text-center', {duration: 800});
+        ScrollReveal().reveal('.text-center', {duration: 800});
         
-        
-        
+        var nome = document.getElementsByName('name').value
+
+
+        fetch("https://formsubmit.co/ajax/jbcristian78@gmail.com", {
+            method: "POST",
+            headers: { 
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                name: "FormSubmit",
+                message: "I'm from Devro LABS"
+            })
+        })
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.log(error));
 
         
     </script>
