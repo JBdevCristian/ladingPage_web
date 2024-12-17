@@ -42,6 +42,10 @@
                         <h3 class="ms-3 text-center"><i>Precisando de um site para seu negocio digital?</i></h3>
                         <hr>
                         <p class="text-center"><i>"Transformamos suas ideias em sites incríveis e soluções digitais sob medida."</i></p>
+                        <div class="d-flex justify-content-center" style="margin-top: 50px;">
+                            <button class="btn btn-info mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Entrar em contato</button>
+                            <button class="btn btn-outline-light" onclick="valores()">Valores</button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 card-cell">
@@ -59,6 +63,10 @@
                         <h3 class="ms-3"><i>Precisando de um site para seu negocio digital?</i></h3>
                         <hr>
                         <p class="text-center"><i>"Transformamos suas ideias em sites incríveis e soluções digitais sob medida."</i></p>
+                        <div class="d-flex" style="margin-left: 120px; margin-top: 50px;">
+                            <button class="btn btn-lg btn-info mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Entrar em contato</button>
+                            <button class="btn btn-lg btn-outline-light" onclick="valores()">Valores</button>
+                        </div>
                     </div>
                 </div>
                 <div class="col caixa2">
@@ -249,7 +257,7 @@
             </div>
         </section>
 
-        <section class="pricing-section text-center">
+        <section class="pricing-section text-center" id="destino">
             <div class="val">
                 <h5><b>* valores</b></h5>
             </div>
@@ -374,7 +382,10 @@
         ScrollReveal().reveal('.text-center', {duration: 800});
         ScrollReveal().reveal('.text-center', {duration: 800});
     
-
+        function valores() {
+            const valor = document.getElementById('destino');
+            valor.scrollIntoView({ behavior: 'smooth' });
+        }
         
     </script>
 
